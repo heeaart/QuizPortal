@@ -6,8 +6,8 @@ class User(models.Model):
     user = models.CharField(max_length=100, blank=False, null=False)
     email = models.EmailField(max_length=200)
     name = models.CharField(max_length=1024)
-    surname = models.CharField(max_length=100)
-    password = models.CharField(max_length=100)
+    surname = models.CharField(max_length=10)
+    password = models.CharField(max_length=10)
     isActive = models.BooleanField(default=True)
     registrationDate = models.DateTimeField(auto_now_add=True)
 
